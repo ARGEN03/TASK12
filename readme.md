@@ -70,7 +70,7 @@
    python manage.py migrate
    ```
 
-7. **Создайте CRUD в файлах заметок (`notes.md`):**
+7. **CRUD в файлах заметок (`readme.md`):**
 
    - **Create (Создание):**
      - Создание автора: `Author.objects.create(name='Имя', date_of_birth ='1990-01-01', nick_name='Псевдоним')`
@@ -102,5 +102,3 @@
    - **Delete (Удаление):**
      - Удаление автора: `Author.objects.get(name='Имя').delete()`
      - Удаление книги: `Book.objects.get(title='Название книги').delete()`
-
-Это пример CRUD-операций в Django. Пожалуйста, помните, что эти операции следует выполнять в контексте вашего приложения Django.
