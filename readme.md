@@ -74,10 +74,10 @@
 
    - **Create (Создание):**
      - Создание автора: `Author.objects.create(name='Имя', date_of_birth ='1990-01-01', nick_name='Псевдоним')`
-     - Создание книги: 
+     - Создание книги: `Book.objects.create(title='название'genre='жанр', created_at='2022-01-01',author=author)`
        ```python
        author = Author.objects.get(name='Имя')
-       Book.objects.create(title='Название книги', date_of_birth='2022-01-01', genre='Жанр', author=author)
+       Book.objects.create(title='Название книги', created_at='2022-01-01', genre='Жанр', author=author)
        ```
 
    - **Read (Чтение):**
